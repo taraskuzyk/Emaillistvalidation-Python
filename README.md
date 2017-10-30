@@ -21,8 +21,8 @@ B.get_info()     // here will be answer from server
                 something like that:
                 135094|6565_clean.csv|no|7|7|finished|1456415517
                 or
-                |https://apps.Emailvalidation.com/app/webroot/files/4195/6565/result_ok_6565_2016-02-25.csv
-                |https://apps.Emailvalidation.com/app/webroot/files/4195/6565/result_all_6565_2016-02-25.csv
+                |https://apps.Emailvalidation.fr/app/webroot/files/4195/6565/result_ok_6565_2016-02-25.csv
+                |https://apps.Emailvalidation.fr/app/webroot/files/4195/6565/result_all_6565_2016-02-25.csv
 #Contributing
 
 This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the Contributor Covenant code of conduct.
