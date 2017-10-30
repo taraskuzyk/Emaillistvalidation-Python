@@ -20,7 +20,7 @@ class EmailvalidationOne():
         return r.text
 
 
-class EmailListVerifyBulk():
+class EmailvalidationBulk():
 
     def __init__(self, key, user_file):
         datenow = datetime.datetime.now()
