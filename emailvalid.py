@@ -6,12 +6,12 @@ import requests
 import datetime
 
 
-class EmailvalidationOne():
+class EmaillistvalidationOne():
    
     def __init__(self, key, email):
         self.key = key
         self.email = email
-        self.verif = "https://apps.emailvalidation.fr/api/verifEmail?secret="
+        self.verif = "https://apps.emaillistvalidation.com/api/verifEmail?secret="
         self.url = self.verif+self.key+"&email="+self.email
 
     
@@ -20,14 +20,14 @@ class EmailvalidationOne():
         return r.text
 
 
-class EmailvalidationBulk():
+class EmaillistvalidationBulk():
 
     def __init__(self, key, user_file):
         datenow = datetime.datetime.now()
         self.key = key
         self.name = 'File' + datenow.strftime("%Y-%m-%d %H:%M")
         self.user_file = user_file
-        self.url = 'https://apps.emailvalidation.fr/api/verifApiFile?secret='+key+'&filename=%s' % self.name
+        self.url = 'https://apps.emaillistvalidation.fr/api/verifApiFile?secret='+key+'&filename=%s' % self.name
 
 
     def upload(self):
@@ -51,7 +51,7 @@ class EmailvalidationBulk():
        
         with open('id_file','r') as f:
             ids = f.read()
-        url = 'https://apps.emailvalidation.fr/api/getApiFileInfo?secret='+self.key+'&id=%s' % ids
+        url = 'https://apps.emaillistvalidation.com/api/getApiFileInfo?secret='+self.key+'&id=%s' % ids
         r = requests.get(url)
         with open('result.txt', 'a') as res:
             res.write(r.content+'\n')
