@@ -1,4 +1,4 @@
-# Emaillistvalidation-Python (except it doesn't suck)
+# EmailListValidation-API
 Python API for emaillistvalidation.com
 
 To install run
